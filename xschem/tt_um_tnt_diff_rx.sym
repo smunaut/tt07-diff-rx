@@ -1,0 +1,49 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -130 -80 130 -80 {}
+L 4 -130 60 130 60 {}
+L 4 -150 -50 -130 -50 {}
+L 4 130 -70 150 -70 {}
+L 4 130 -50 150 -50 {}
+L 4 130 -30 150 -30 {}
+L 4 -150 -30 -130 -30 {}
+L 4 -150 -10 -130 -10 {}
+L 4 -150 10 -130 10 {}
+L 4 -150 30 -130 30 {}
+L 4 -130 -80 -130 60 {}
+L 4 130 -80 130 60 {}
+L 7 130 10 150 10 {}
+L 7 -150 -70 -130 -70 {}
+L 7 -150 50 -130 50 {}
+B 5 -152.5 47.5 -147.5 52.5 {name=VGND dir=inout sim_pinnumber=1}
+B 5 -152.5 -72.5 -147.5 -67.5 {name=VPWR dir=inout sim_pinnumber=2}
+B 5 -152.5 27.5 -147.5 32.5 {name=ena dir=in sim_pinnumber=3}
+B 5 -152.5 7.5 -147.5 12.5 {name=rst_n dir=in sim_pinnumber=4}
+B 5 -152.5 -12.5 -147.5 -7.5 {name=clk dir=in sim_pinnumber=5}
+B 5 -152.5 -32.5 -147.5 -27.5 {name=ui_in[7:0] dir=in sim_pinnumber=6}
+B 5 -152.5 -52.5 -147.5 -47.5 {name=uio_in[7:0] dir=in sim_pinnumber=14}
+B 5 147.5 -32.5 152.5 -27.5 {name=uo_out[7:0] dir=out sim_pinnumber=22}
+B 5 147.5 -52.5 152.5 -47.5 {name=uio_out[7:0] dir=out sim_pinnumber=30}
+B 5 147.5 -72.5 152.5 -67.5 {name=uio_oe[7:0] dir=out sim_pinnumber=38}
+B 5 147.5 7.5 152.5 12.5 {name=ua[7:0] dir=inout sim_pinnumber=46}
+T {@symname} -94.5 -6 0 0 0.3 0.3 {}
+T {@name} 135 -92 0 0 0.2 0.2 {}
+T {ua[7:0]} 125 6 0 1 0.2 0.2 {}
+T {uio_in[7:0]} -125 -54 0 0 0.2 0.2 {}
+T {uio_oe[7:0]} 125 -74 0 1 0.2 0.2 {}
+T {uio_out[7:0]} 125 -54 0 1 0.2 0.2 {}
+T {uo_out[7:0]} 125 -34 0 1 0.2 0.2 {}
+T {ui_in[7:0]} -125 -34 0 0 0.2 0.2 {}
+T {clk} -125 -14 0 0 0.2 0.2 {}
+T {rst_n} -125 6 0 0 0.2 0.2 {}
+T {VPWR} -95 -74 0 1 0.2 0.2 {}
+T {VGND} -95 46 0 1 0.2 0.2 {}
+T {ena} -125 26 0 0 0.2 0.2 {}
